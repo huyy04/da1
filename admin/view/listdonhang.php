@@ -20,7 +20,7 @@
            foreach ($donhang as $dh){
                extract($dh);
                $link  ="index.php?act=delldh&id=".$id;
-               $linkct = "index.php?act=list_giohang&id".$id;
+               $linkct = "index.php?act=list_donhang&iddh=".$id;
                echo '<tr>
                         <td>'.$id.'</td>
                         <td>'.$madh.'</td>

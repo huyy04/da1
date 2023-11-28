@@ -73,15 +73,12 @@ if (isset($_GET['act'])) {
             break;
 
         case "donhang":
-            include "view/listdonhang.php";
-            break;
-
-        case "list_giohang":
-            if (isset($_GET['id']) && $_GET['id'] > 0){
-                $id = $_GET['id'];
-                $giohang = giohang($id);
+            if (isset($_GET['iddh']) && $_GET['iddh']> 0){
+                 $id = $_GET['iddh'];
+                 $dhct = giohang($id);
+                 include "view/giohang.php";
             }
-            include "view/giohang.php";
+            include "view/listdonhang.php";
             break;
     }
 }else{
